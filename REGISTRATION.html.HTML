@@ -1,0 +1,183 @@
+<html>
+<head>
+<body background="skyblue">
+<title>registration form</title>
+<script language="javascript">
+
+function validate()
+{
+
+if(document.feedback.fname.value == "")
+	{
+alert(" first name is required ");
+document.feedback.fname.focus();
+	return false;
+	}
+	
+else
+if(document.feedback.mname.value == "")
+{
+alert("middle name is required ");
+document.feedback.mname.focus();
+return false;
+}
+
+else
+if(document.feedback.lname.value == "")
+{
+alert("last name is required ");
+document.feedback.lname.focus();
+return false;
+}
+
+else
+if(document.feedback.address.value == "")
+{
+alert("Enter your Address ");
+document.feedback.address.focus();
+return false;
+}
+
+else
+
+if(document.feedback.password.value == "")
+{
+alert("Enter your password ");
+document.feedback.password.focus();
+return false;
+}
+else
+if(document.feedback.textemail.value == "")
+{
+alert(" email is required ");
+document.feedback.textemail.focus();
+return false;
+}
+
+else
+if(document.feedback.textemail.value.indexOf('@')== -1)
+{
+alert(" @ is missing ");
+document.feedback.textemail.focus();
+return false;
+}
+
+else
+if(document.feedback.phone.value == "")
+{
+alert(" Enter your phone number ");
+document.feedback.phone.focus();
+return false;
+}
+}
+</script>
+
+<body bgcolor="blue">
+<center>
+  <img src="image/1608189046673.png" height="150px" style="border-radius: 40rem; border: 3px solid white; ">
+<CENTER>
+<font type="bold" size=8 color="white"><hr color="white"> <marquee behavior="alternate"> FILL THIS FORM TO BE A MEMBER </marquee></font></CENTER>
+<p><font type="bold" size=5 color="white"><center> Please fill the form correclty. </center>
+<HR COLOR="white">
+<FORM method="link" name="feedback" action="Thanks.html">
+
+
+<TABLE BORDER="0" HEIGTH="150" WIDTH="150" CELLSPACING="0" CELLPADING="0" ALIGN="LEFT">
+<TR>
+<TD COLSPAN=3><IMG SRC="image/Asset-4laziz-Oil.png" HEIGTH="165" WIDTH="185">
+<TD>
+<TD>
+</TR>
+<TR>
+<TD COLSPAN=3><IMG SRC="image/maggi.jpeg" HEIGHT="165" WIDTH="185">
+<TD>
+<TD>
+</TR>
+<TR>
+<TD COLSPAN=3><IMG SRC="image/images (67).jpeg" HEIGHT="235" WIDTH="185">
+<TD>
+<TD>
+</TR>
+</table>
+
+
+<TABLE BORDER="0" HEIGTH="150" WIDTH="150" CELLSPACING="0" CELLPADING="0" ALIGN="right">
+<TR>
+<TD COLSPAN=3><IMG SRC="image/images (10).jpeg" HEIGTH="205" WIDTH="205">
+<TD>
+<TD>
+</TR>
+<TR>
+<TD COLSPAN=3><IMG SRC="image/images (5).jpeg" HEIGHT="205" WIDTH="205">
+<TD>
+<TD>
+</TR>
+<TR>
+<TD COLSPAN=3><IMG SRC="image/images (90).jpeg" HEIGHT="205" WIDTH="205">
+<TD>
+<TD>
+</TR>
+</TABLE>
+<table cellspacing=10 cellpadding=1>
+<font face="new times roman" color="white">
+<tr><td>First Name <td><input type="text" name="fname"  size="30"> </tr>
+<tr><td>Middle Name <td><input type="text" name="mname"  size="30"> </tr>
+<tr><td>Last Name<td><input type="text" name="lname"  size="30"> </tr>
+<tr><td>Country:<td>
+    <SELECT name=select>
+      <OPTION selected>NIGERIA</OPTION>
+      <OPTION>CAMERON</OPTION>
+      <OPTION>TOGO</OPTION>
+      <OPTION>MALI</OPTION>
+      <OPTION>IVORY COAST</OPTION>
+      <OPTION>NIGER</OPTION>
+      <OPTION>CHAD</OPTION>
+      <OPTION>SENEGAL</OPTION>
+      <OPTION>SOUTH AFRICA</OPTION>
+      <OPTION>ZAMBIA</OPTION>
+      <OPTION>ZIMBABWE</OPTION>
+      <OPTION>ANGOLA</OPTION>
+      <OPTION>UGANDA</OPTION>
+      <OPTION>EGYPT</OPTION>
+      <OPTION>ETHOPIA</OPTION>
+      <OPTION>ALGERIA</OPTION>
+      <OPTION>LIBYIA</OPTION>
+      <OPTION>TUNISIA</OPTION>
+      <OPTION>SUDAN</OPTION>
+      <OPTION>SOMALIA</OPTION>
+      <OPTION>ERITERIA</OPTION>
+      <OPTION>MORROCCO</OPTION>
+      <OPTION>BENIN</OPTION>
+      <OPTION>GHANA</OPTION>
+      <OPTION>LONDON</OPTION>
+      <OPTION>CANADA</OPTION>
+      <OPTION>INDIA</OPTION>
+      <OPTION>BANGLADESH</OPTION>
+      <OPTION>PAKISTAN</OPTION>
+      <OPTION>MALAWI</OPTION>
+      <OPTION>MALAYSIA</OPTION>
+      <OPTION>CHINA</OPTION>
+      <OPTION>CHILE</OPTION>
+      <OPTION>PARAGUAY</OPTION>
+      <OPTION>BRAZIL</OPTION>
+      <OPTION>GERMANY</OPTION>
+      <OPTION>SPAIN</OPTION>
+      <OPTION>CONGO</OPTION>
+      <OPTION>GUINEA</OPTION>
+      <OPTION>HOLLAND</OPTION>
+    </SELECT></tr>
+<tr><td>Address<td><input type="text" name="address"  size="30">
+<tr><td>Password<td><input type="text" name="password" size="30"> </tr>
+<tr><td>Gender<td> <select name="gender" size=1>
+           	<option value="Male" selected>Male
+           	<option value="Female">Female	
+      	</select> </tr>
+<tr><td>Email<td> <input name="textemail" type="text" size="30"> </tr>
+<tr><td>Phone<td><input name="phone" type="number" size="30"></tr> 
+</table>
+<input type="submit" value="SUBMIT" name="botton1" onclick= "return validate()">
+<input type="reset" value="RESET" name="button2" onclick="alert('THE FIELDS WILL BE CLEARED')">
+</font>
+</form>
+</body></html>
+</head>
